@@ -115,7 +115,7 @@
 								<div class="4u">
 									<article class="item">
 										<div class="progress-radial progress-75">
-										  <div class="overlay">HTML</div>
+										 	<div class="overlay">HTML</div>
 										</div>
 									</article>
 									<article class="item">
@@ -222,6 +222,16 @@
 					</ul>
 				
 			</div>
-
+			<script type="text/javascript">
+			$( document ).ready(function() {
+    $(".setsize").each(function() {
+        $(this).height($(this).width());
+    });
+});
+$(window).on('resize', function(){
+    $(".setsize").each(function() {
+        $(this).height($(this).width());
+    });
+});</script>
 	</body>
 </html>
