@@ -46,7 +46,7 @@ function init() {
  
     textGeo = new THREE.PlaneGeometry(300,300);
     THREE.ImageUtils.crossOrigin = ''; 
-    textTexture = THREE.ImageUtils.loadTexture('https://falkirks.github.io/macbeth/text.png');
+    textTexture = THREE.ImageUtils.loadTexture('https://falkirks.com/macbeth/text.png');
     textMaterial = new THREE.MeshLambertMaterial({color: 0xFF0606, opacity: 1, map: textTexture, transparent: true, blending: THREE.AdditiveBlending})
     text = new THREE.Mesh(textGeo,textMaterial);
     text.position.z = 800;
