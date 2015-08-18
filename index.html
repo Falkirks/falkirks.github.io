@@ -218,14 +218,17 @@
 
 		<!-- Footer -->
 			<div id="footer">
-                <span id="randomThing">? ? ?</span>
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Falkirks. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
+                <span id="randomThing" style="opacity:0.5;">? ? ?</span>
 				
 			</div>
 			<script type="text/javascript">
+            $.get("/randomThings.txt", function( data ){
+                alert(data);
+            });
             $.getJSON( "/randomThings.json", function( data ) {
                 var thing = data.things[Math.floor(Math.random()*data.things.length)];
                 $("#randomThing").html(thing.text);
