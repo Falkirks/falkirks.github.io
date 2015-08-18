@@ -226,9 +226,8 @@
 				
 			</div>
 			<script type="text/javascript">
-            $.getJSON( "randomThings.json", function( data ) {
+            $.getJSON( "/randomThings.json", function( data ) {
                 var thing = data.things[Math.floor(Math.random()*data.things.length)];
-                alert(thing.text);
                 $("#randomThing").html(thing.text);
             });
 			$( document ).ready(function() {
