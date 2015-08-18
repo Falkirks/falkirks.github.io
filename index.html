@@ -80,8 +80,6 @@
 
 		<!-- Main -->
 			<div id="main">
-
-				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
 
@@ -96,7 +94,6 @@
 
 						</div>
 					</section>
-					
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
@@ -184,6 +181,7 @@
 							</header>
 
 							<a href="#" class="image featured"><img src="images/skyline.jpg" alt="" /></a>
+                            
 							
 							<p>I am a 16 year old developer, segfault creator, and amateur actor living in <a href="http://en.wikipedia.org/wiki/Vancouver">Vancouver, CA</a>. I was introduced to programming in grade 6 and quickly formed an unhealthy obession. I started by writing quick websites for school projects and eventually picked up PHP as my native language. I am now fluent in Java, JavaScript, and C++. I am constantly looking for new ways to challenge my skills and have worked as a consulting developer for a variety of companies and projects. I am also a strong believer in the need for open source and permissive licensing. I have shared <strong>100</strong>s of hours of work with the open source community under the MIT license on <a href="https://github.com/Falkirks">GitHub</a>, this code has been used by millions of people. I program for fun and to be challenged. I program to think outside the box and create elegant solutions to inelegant problems.</p>
 
@@ -220,7 +218,7 @@
 
 		<!-- Footer -->
 			<div id="footer">
-				
+                <span id="randomThing">? ? ?</span>
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Falkirks. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -228,15 +226,21 @@
 				
 			</div>
 			<script type="text/javascript">
+            $.getJSON( "randomThings.json", function( data ) {
+                var thing = data.things[Math.floor(Math.random()*data.things.length)];
+                alert(thing.text);
+                $("#randomThing").html(thing.text);
+            });
 			$( document ).ready(function() {
-    $(".setsize").each(function() {
-        $(this).height($(this).width());
-    });
-});
-$(window).on('resize', function(){
-    $(".setsize").each(function() {
-        $(this).height($(this).width());
-    });
-});</script>
+                $(".setsize").each(function() {
+                    $(this).height($(this).width());
+                });
+            });
+            $(window).on('resize', function(){
+                $(".setsize").each(function() {
+                    $(this).height($(this).width());
+                });
+            });
+            </script>
 	</body>
 </html>

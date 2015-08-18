@@ -1,0 +1,10 @@
+{
+ things: [
+     {
+         text: "Hello World!"
+     },
+     {
+         text: "All the world's a stage..."
+     }
+ ]
+}
