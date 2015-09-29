@@ -17,6 +17,8 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -56,7 +58,7 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#languages" id="languages-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Languages</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
@@ -85,86 +87,46 @@
 
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Falkirks</strong>, high-school student and open source developer.</h2>
-								<p>Apart from being horrendously busy with schoolwork, I find time to develop a variety of open source projects in a bunch of languages. I also do freelance work.</p>
+								<p>Apart from being horrendously busy with schoolwork, I find time to develop a variety of open source projects in a bunch of languages. I also do <a href="mailto:me@falkirks.com">freelance work</a>.</p>
 							</header>
 							
 							<footer>
-								<a href="#portfolio" class="button scrolly">Tell me more</a>
+								<a href="#languages" class="button scrolly">Tell me more</a>
 							</footer>
 
 						</div>
 					</section>
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+				<!-- languages -->
+					<section id="languages" class="two">
 						<div class="container">
 					
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Languages</h2>
 							</header>
-							
-							<p>I maintain a variety of websites and open source projects.</p>
 
 							<div class="row">
-								<div class="6u">
+								<div class="12u">
 									<article class="item">
-										<a href="http://banner.mcpe.me" target="_blank" class="image fit"><img src="images/pic02.jpg" alt=""/></a>
 										<header>
-											<h3>PocketMine Banners</h3>
-										</p>On-demand rendering of uptime banners for MCPE game servers.</p>
+											<h2>(OOP) PHP</h2>
+											<p>I have 5+ years of experience with PHP. I have experience using <a href="http://www.slimframework.com">Slim</a>, <a href="http://php.net/manual/en/book.pthreads.php">pthreads</a>, and <a href="http://php.net/manual/en/class.mongodb.php">MongoDB</a>. Most of my open source PHP work is with <a href="http://pocketmine.net">PocketMine</a>, the MCPE server software.</p>
+											<hr>
+											<p><a href="https://github.com/Falkirks/BuyCraft">Falkirks/Buycraft</a>, <a href="https://github.com/Falkirks/Specter">Falkirks/Specter</a>, <a href="https://github.com/Falkirks/Volt">Falkirks/Volt</a>, <a href="https://github.com/Falkirks/TeamShog">Falkirks/TeamShog</a> and <a href="https://github.com/Falkirks/SimpleWarp">Falkirks/SimpleWarp</a> </p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="http://udid.falkirks.com" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
-											<h3>UDID Grabber</h3>
-											<p>Tool for retrieving UDIDs from iOS devices easily.</p>
+											<h2>Node.js</h2>
+											<p>I have 2 years of experience with Node.js. I have used it to write web apps, libraries and CLIs. I have experience with <a href="http://expressjs.com">Express</a>, <a href="http://docs.mongodb.org/ecosystem/drivers/node-js/">MongoDB</a>, <a href="https://www.meteor.com">Meteor</a>, <a href="http://socket.io">Socket.io</a>, <a href="http://passportjs.org">Passport</a> and a bunch of other libraries.</p>
+											<hr>
+											<p><a href="https://github.com/ocws">ocws</a>, <a href="https://github.com/Falkirks/mcpe-ping">Falkirks/mcpe-ping</a>, <a href="https://github.com/Falkirks/mcperadar">Falkirks/mcperadar</a>, <a href="https://github.com/Falkirks/nofear">Falkirks/nofear</a> and <a href="https://github.com/Falkirks/Octoclap">Falkirks/Octoclap</a></p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="http://links.falkirks.com" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
 										<header>
-											<h3>Link Bundler</h3>
-											<p>Shorten many links into one bundled link. Also includes cool password protection.
+											<h2>Java</h2>
+											<p>I have 2 years of experience with Java. I learned it in school in preparation for the <b>AP Computer Science A</b> exam. My school work from that class is <a href="https://github.com/Falkirks/JavaProblems">on GitHub</a>. I have used it it some contract work, but none of that code is open source (sorry).</p>
 										</header>
-									</article>
-									<article class="item">
-										<a href="https://mcpe.me" class="image fit"><img src="images/mcpeme.png" alt="" /></a>
-										<header>
-											<h3>mcpe.me</h3>
-											<p>A free hostname tool for MCPE servers. Uses CloudFlare API.</p>
-										</header>
-									</article>
-								</div>
-								<div class="6u">
-									<article class="item">
-										<a href="http://rcon.mcpe.me" class="image fit"><img src="images/pic09.jpg" alt="" /></a>
-										<header>
-											<h3>Web RCON</h3>
-											<p>A web app implementation of the RCON protocol used on Minecraft servers.</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://mcpeyoutubers.net" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>MCPEYoutubers</h3>
-											<p>A forums website for discussion of MCPE and making YouTube videos for MCPE. Built on myBB.</p>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/Falkirks/TeamShog" class="image fit"><img src="images/watertos.jpg" alt="" /></a>
-										<header>
-											<h3>WaterTOS</h3>
-											<p>A legal document detection and beautification app. Built in a weekend.</p>
-										</header>
-
-									</article>
-									<article class="item">
-										<a href="https://github.com/Falkirks/ShogChat" class="image fit"><img src="images/shogchat.png" alt="" /></a>
-										<header>
-											<h3>ShogChat</h3>
-											<p>A proof-of-concept GitHub chat application. Websocket and IRC support. Like Gitter but not Gitter.</p>
-										</header>
-
 									</article>
 								</div>
 							</div>
@@ -179,11 +141,27 @@
 							<header>
 								<h2>About Me</h2>
 							</header>
-
-							<a href="#" class="image featured"><img src="images/skyline.jpg" alt="" /></a>
-                            
-							
-							<p>I am a 16 year old developer, segfault creator, and amateur actor living in <a href="http://en.wikipedia.org/wiki/Vancouver">Vancouver, CA</a>. I was introduced to programming in grade 6 and quickly formed an unhealthy obession. I started by writing quick websites for school projects and eventually picked up PHP as my native language. I am now fluent in Java, JavaScript, and C++. I am constantly looking for new ways to challenge my skills and have worked as a consulting developer for a variety of companies and projects. I am also a strong believer in the need for open source and permissive licensing. I have shared <strong>100</strong>s of hours of work with the open source community under the MIT license on <a href="https://github.com/Falkirks">GitHub</a>, this code has been used by millions of people. I program for fun and to be challenged. I program to think outside the box and create elegant solutions to inelegant problems.</p>
+							<p>The chart below hopefully contains any information about me that you need (or want) to know. The table is generated from a <a href="/aboutMe.json">JSON file</a>. You can always <a href="mailto:me@falkirks.com">email me</a> if I missed something.</p>
+							<div class="row">
+								<div class="12u">
+									<table class="default" id="aboutMeTable">
+										<thead>
+											<tr>
+												<td>?</td>
+												<td>!</td>
+											</tr>
+										</thead>
+										<tbody>
+											<noscript>
+											<tr>
+												<td>Why isn't there anything here</td>
+												<td>You need JavaScript enabled to load my "about me".</td>
+											</tr>
+											</noscript>
+										</tbody>
+									</table>
+								</div>
+							</div>
 
 						</div>
 					</section>
@@ -226,9 +204,6 @@
 				
 			</div>
 			<script type="text/javascript">
-            $.get("/randomThings.txt", function( data ){
-                alert(data);
-            });
             $.getJSON( "/randomThings.json", function( data ) {
                 var thing = data.things[Math.floor(Math.random()*data.things.length)];
                 $("#randomThing").html(thing.text);
