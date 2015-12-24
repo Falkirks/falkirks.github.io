@@ -7,6 +7,10 @@
     "humanName": "Age",
     "text": "17"
   },
+  "email": {
+    "humanName": "Email",
+    "text": "me@falkirks.com"
+  }
   "birthday": {
     "humanName": "Birthday",
     "text": "October 20th"
@@ -17,7 +21,7 @@
   },
   "pronouns": {
     "humanName": "Pronouns",
-    "text": "he/his (they/their also works great online)"
+    "text": "they/them (most people use he/him online)"
   },
   "interests": {
     "humanName": "Interests",
