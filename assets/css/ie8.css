@@ -1,54 +1,43 @@
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @n33co
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
-
-	body, input, select, textarea {
-		color: #ffffff;
-	}
-
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		position: relative;
+		border: solid 2px !important;
 	}
 
-		input[type="submit"]:after,
-		input[type="reset"]:after,
-		input[type="button"]:after,
-		button:after,
-		.button:after {
+		.button.next {
+			padding-right: 1.75em;
+		}
+
+			.button.next:before, .button.next:after {
+				display: none;
+			}
+
+/* Tiles */
+
+	.tiles article {
+		width: 50%;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		background-size: cover;
+	}
+
+/* Banner */
+
+	#banner {
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+		#banner:after {
 			display: none;
 		}
 
-/* Features */
+/* Menu */
 
-	.features {
-		border: solid 1px;
-	}
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		background: transparent;
-		border: solid 1px;
-	}
-
-/* Split */
-
-	.split.style1 > :first-child {
-		padding-right: 2em;
-		width: 70%;
+	#menu {
+		background: #242943;
 	}

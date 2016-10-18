@@ -1,88 +1,94 @@
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @n33co
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
-
-	h1.major:after {
-		background: #b74e91;
-	}
-
-/* Wrapper */
-
-	.wrapper.fullscreen {
-		min-height: 0;
-		padding-bottom: 6em;
-		padding-top: 6em;
-	}
-
-		body.is-ie .wrapper.fullscreen {
-			height: auto;
-		}
-
 /* Spotlights */
 
-	.spotlights > section {
-		padding-left: 20em;
-		position: relative;
-	}
-
-		.spotlights > section > .image {
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 20em;
-		}
-
-		.spotlights > section > .content {
-			width: 100%;
-		}
-
-/* Features */
-
-	.features:after {
-		clear: both;
+	.spotlights > section:after {
 		content: '';
 		display: block;
+		clear: both;
 	}
 
-	.features section {
+	.spotlights > section > .image {
 		float: left;
 	}
 
-/* Split */
-
-	.split:after {
-		clear: both;
-		content: '';
-		display: block;
-	}
-
-	.split > * {
+	.spotlights > section > .content {
 		float: left;
 	}
 
-/* Sidebar */
+/* Tiles */
 
-	#sidebar nav a:after {
-		background-color: #b74e91;
+	.tiles:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.tiles article {
+		padding: 8em 4em 6em 4em ;
+		float: left;
+		height: auto;
+		max-height: none;
+		min-height: 0;
 	}
 
 /* Header */
 
-	#header:after {
-		clear: both;
-		content: '';
-		display: block;
+	#header .logo {
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
-	#header > .title {
+	#header nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 7em 0 4em 0 ;
+		background-attachment: scroll;
+		height: auto;
+		max-height: none;
+		min-height: 0;
+	}
+
+		#banner > .inner .content {
+			display: block;
+		}
+
+			#banner > .inner .content > * {
+				margin-left: 0;
+				margin: 0 0 2em 0;
+			}
+
+		#banner.major {
+			height: auto;
+			max-height: none;
+			min-height: 0;
+		}
+
+/* Contact */
+
+	#contact:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#contact > .inner > * {
 		float: left;
 	}
 
-	#header > nav {
-		float: right;
+/* Menu */
+
+	#menu .inner {
+		margin: 0 auto;
 	}
