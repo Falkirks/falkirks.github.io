@@ -1,0 +1,5 @@
+MineReset for PocketMine-MP
+===========================
+MineReset is a tool for creating and resetting ratio based mines. It is now over 2 years old!
+
+Created by: @Falkirks, @Pub4Game, @jasonwynn10, @MCPEGamerJPatGitHub, @JackNoordhuis, @Chris-Prime, and @Infernus102
